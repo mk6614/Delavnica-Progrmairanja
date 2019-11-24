@@ -1,10 +1,10 @@
-#PREDAVANJE 1
+# PREDAVANJE 1
 
 Na teh predavanjih se bomo naučili kaj je program, kaj je stavek in kaj je spremenljivka. Opozorili bomo na pomembne "malenkosti" v zvezi s programom in obliko stavkov.
 
 Predavanje je setsavljeno iz teoretičnega dela, kjer bomo najprej pregledali na kaj moramo biti pozorni. Sledil bo praktični del, kjer bomo najprej pogledali kako stvari delujejo v praksi. Program program0.py je namenje ilustraciji predstavljenih konceptov. Programi program1.py do program17.py so namenjeni utrjevanju. Vsak izmed teh programov vsebuje eno napako, ki naj jo dijak odpravi, da dobimo pravilno delovanje programa.
 
-##TEORETIČNI DEL
+## TEORETIČNI DEL
 
 Današnja teorija obsega osnovne koncepte programskih jezikov. Pogledali bomo kaj točno je program, kaj je spremenljivka, kako pišemo stavke, kako spremenljivki priredimo vrednost ter kakšnega tipa je vrednost spremenljivke, ter katere so osnovne operacije med spremenljivkami lahko opravljamo.
 
@@ -42,7 +42,7 @@ Neveljavna imena spremenljivk so na primer:
 Pri tem paznimo, da sta spremenljivki `letorojstva` in `letoRojstva` dve različni spremenljivki. 
 
 Progrmaski jezik Python zahteva, da se spremenljivki takoj priredi vrednost. Prireditev vrednosti spremenljivki je eden izmed stavkov programa.
-Spremenljivki lahko priredimo različne vrednosti:
+Spremenljivki lahko priredimo različne vrednosti, na primer
 ``` pi = 3.14 ```
 
 Stavek `pi = 3.14` priredi vrednost `3.14` spremenljivki, poimenovani kot `pi`. Vrednost spremenljivke `pi`po izvršbi tega prirejevalnega stavka je torej `3.14`.
@@ -63,9 +63,9 @@ Pri programiranju poznamo več *osnovnih* tipov vrednosti:
 * niz (angleško string, skrajšano kot str)
 
 Primeri prirejanja različnih tipov:
-* r = 2 *vrednost spremenljivke r je celo število*
-* r = 2.0 *vrednost spremenljivke r je racionalno*
-* ime = "Mojca" *vrednost spremenljivke ime je niz - bodimo pozorni na narekovaje*
+* r = 2 *#vrednost spremenljivke r je celo število*
+* r = 2.0 #*vrednost spremenljivke r je racionalno*
+* ime = "Mojca" #*vrednost spremenljivke ime je niz - bodimo pozorni na narekovaje*
 
 ### Osnovne operacije nad spremenljivkami
 
@@ -75,13 +75,16 @@ Vsak programski jezik razume nekatere osnovne operacije. Programski jezik Python
 * množenje 		`*`
 * deljenje 		`/`
 
+Te operacije lahko izvajamo nad števili:
+
 * seštevanje, odštevanje, množenje, deljenje celih števil (npr. `1 + 2 = 3`)
 * seštevanje, odštevanje, množenje, deljenje racionalnih števil (npr. `3.14 + 2.5 = 5.64`)
 * seštevanje, odštevanje, množenje, deljenje racionalnih in celih števil (npr. `1 + 3.14 = 4.14`)
 
 Python pozna tudi nekatere osnovne operacije z nizi:
-* seštevanje nizov (npr. `"Mojca " + "Kolsek" = "Mojca Kolsek`)
-* množenje nizov in celih števil (`"Mojca " * 2 = "Mojca Mojca "`)
+
+* seštevanje nizov (npr. `"Mojca " + "Kolsek" = "Mojca Kolsek"`)
+* množenje nizov in celih števil (npr. `"Mojca " \* 2 = "Mojca Mojca "`)
 
 Pri tem pazimo, da `2 * "Mojca "` ni veljaven stavek, saj bi v tem primeru radi množili `2` z `"Mojca "` in ne `"Mojca "` z `2`.
 
@@ -91,7 +94,8 @@ Osnovnih operacij je več in jih bomo spoznali v sledečih predavanjih.
 Včasih bi radi spremenili tip vrednosti spremenljivke. Radi bi na primer jemali neko celo število kot niz. V ta namen so ponujene funkcije, ki to opravijo za nas.
 Na primer:
 ```
-opis = "pi = " + 3.14
+pi = 3.14
+opis = "pi = " + pi
 print(opis)
 ```
 
@@ -102,27 +106,43 @@ opis = "pi = " + str(3.14)
 print(opis)
 ```
 
-Poznamo tri takšne osnovne funkcije za spreminjanje tipa:
-* str(x) *tip vrednosti spremenljivke x se spremeni v niz*
-* int(x) *tip vrednosti spremenljivke x se spremeni v celo število* 
-* float(x) *tip vrednosti spremenljivke x se spremeni v racionalno število*
+Python ima naslednje tri osnovne funkcije za spreminjanje tipa:
+* str(x) #*tip vrednosti spremenljivke x se spremeni v niz*
+* int(x) #*tip vrednosti spremenljivke x se spremeni v celo število* 
+* float(x) #*tip vrednosti spremenljivke x se spremeni v racionalno število*
 
-Pozorni bodimo, da lahko funkcija povzroči napako; stavek `int("Mojca")` bo povzročil napako, saj funkcija `str`ne ve, kako naj niz `"Mojca"` spremeni v celo število.
+Pozorni bodimo, da lahko funkcija povzroči napako; stavek `int("Mojca")` bo povzročil napako, saj funkcija `str` ne ve, kako naj niz `"Mojca"` spremeni v celo število.
 Stavek `int("7")` bo deloval kot pričakovano in ponudil rezulat `7`. Odstranil bo torej narekovaje.
 Stavek `float("7")` bo ponudil rezultat `7.0`.
 
 # PRAKTIČNI DEL
 V datoteki boste našli več programov:
-* program0.py
-* program1.py
+* [program0.py](./program0.py)
+* [program1.py](./program1.py)
 * ...
-* program18.py
+* [program18.py](./program18.py)
 
 Program  `program0.py` deluje kot demonstaracija teoretičnega dela.
 Ostali programi so namenjeni utrjevanju snovi. Vsak izmed teh naj bi izpisal enak niz, oblike "ime priimek starost". Vsak program vsebuje napako, ki jo je potrebno odpraviti, da se program pravilno zažene.
 
+Vse datoteke lahko prenesete na svoj računalnik v formatu `.zip`, sklikom na gumb `cone or download`.
+
+Razširite datoteko (unzip). Pojdite v vašo datoteko, in kopirajte `pot` to te datoteke. To storite tako, da kliknete na pot, kot prikazano v spodnji sliki, in kopirate niz. Vaša pot bo podobnja naslednji : `C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1``
+![Vaša pot](pot.png)
+
+Odprite ukazno okno (angleško "command prompt", skrajšano kot `cmd`. Oprite `start` in iščite za aplikacijo `cmd`.
+![ukazno okno](cmd.png)
+
+V ukaznem oknu se morate premakniti v vašo datoteko. To naredite tako, da v vaše ukazno okno vtipkate ukaz `cd C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1`, kjer je `C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1` vaša pot, ki ste jo prej kopirali. 
+![ukazno okno](cd.png)
+
+Če v ukazno okno vtipkate ukaz `python --version` , bi vam moralo izpisati verzijo prevajalnika python, naloženo na vašem računalniku.
+![ukazno okno](python_version.png)
+
+
 Program zaženete z ukazom `python`, na primer `python program0.py`.
-Ne pozabite vedno shraniti spremenjenega tekstovnega programa, predn ga zaženete.
+Ne pozabite vedno shraniti tekstovnega programa, če ste ga spremenili, predn ga zaženete.
+![ukazno okno](run.png)
 
 
 
