@@ -128,13 +128,13 @@ Ostali programi so namenjeni utrjevanju snovi. Vsak izmed teh naj bi izpisal ena
 Vse datoteke lahko prenesete na svoj računalnik v formatu `.zip`, sklikom na gumb `cone or download`.
 
 Razširite datoteko (unzip). Pojdite v vašo datoteko, in kopirajte `pot` to te datoteke. To storite tako, da kliknete na pot, kot prikazano v spodnji sliki, in kopirate niz. Vaša pot bo podobnja naslednji : `C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1``
-![Vaša pot](pot.png)
+![Vaša pot](./pot.png)
 
 Odprite ukazno okno (angleško "command prompt", skrajšano kot `cmd`. Oprite `start` in iščite za aplikacijo `cmd`.
-![ukazno okno](cmd.png)
+![ukazno okno](./cmd.png)
 
 V ukaznem oknu se morate premakniti v vašo datoteko. To naredite tako, da v vaše ukazno okno vtipkate ukaz `cd C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1`, kjer je `C:\Users\mojca\Documents\Delavnica-Progrmairanja\Predavanje1` vaša pot, ki ste jo prej kopirali. 
-![ukazno okno](cd.png)
+![ukazno okno](./cd.png)
 
 Če v ukazno okno vtipkate ukaz `python --version` , bi vam moralo izpisati verzijo prevajalnika python, naloženo na vašem računalniku.
 ![ukazno okno](python_version.png)
@@ -142,7 +142,7 @@ V ukaznem oknu se morate premakniti v vašo datoteko. To naredite tako, da v va�
 
 Program zaženete z ukazom `python`, na primer `python program0.py`.
 Ne pozabite vedno shraniti tekstovnega programa, če ste ga spremenili, predn ga zaženete.
-![ukazno okno](run.png)
+![ukazno okno](./run.png)
 
 
 
